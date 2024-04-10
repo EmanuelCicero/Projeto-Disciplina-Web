@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;    
+}
+
+main{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-login{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    display: block;
+}
+
+.form input{
+    width: 350px;
+    background-color: #FFF6F4;
+    border: none;
+    text-indent: 10px;
+    padding: 12px 0;
+    outline: none;
+}
+
+.form input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    border-radius: 4px;
+}
+
+label + input {
+    margin-bottom: 20px;
+}
+
+.form-login h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.form-color{
+    width: 40%;
+    background-color: #FFEDE1;
+}
+
+.form-img img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+}
+
+.button-login{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: #F47458;
+    font-size: 14px;
+    border: none;
+    padding: 8px 116px;
+    border-radius: 20px;
+    font-weight: 300;
+    min-width: 280px;
+}
+
+.form-login span{
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.50);
+    margin-top: 8px;
+    text-align: center;
+}
+
+.form-login span a{
+    text-decoration: none;
+    color: #F47458;
+    font-size: 14px;
+}
+
+/* Alterações tela Register */
+
+.screen-resgister .form-login h1{
+    font-size: 46px;
+}
+
+.screen-resgister .form-login{
+    padding: 5px 60px;
+}
+
+.screen-register .first_last_name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 10px;
+}
+
+.screen-register input {
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.screen-register .first_last_name input{
+    width: 215px;
+}
+
+
+@media screen and (max-width:480px) {
+    .form-color{
+        display: none;
+    }
+    
+    .form-img{
+        display: none;
+    }
+
+    .container{
+        align-items: flex-start;
+    }
+    
+    .container, .form-container{
+        width: 100%;
+    }
+
+    .form-container{
+        box-shadow: none;
+    }
+
+    .form-login{
+        margin-top: 120px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .form-login h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .screen-resgister .form-login h1{
+        font-size: 30px;
+    }
+
+    .screen-resgister .form-login{
+        padding: 0;
+    }
+
+    .screen-register .first_last_name input{
+        width: 170px;
+    }
+    
+    .screen-register input {
+        margin-bottom: 20px;
+        width: 350px;
+    }
+}
