@@ -1,6 +1,6 @@
 # Projeto de Desenvolvimento para Web
 
-## Acesse o site [aqui](https://emanuelcicero.github.io/Projeto-Disciplina-Web/){:target="_blank"}  
+## Acesse o site [aqui](https://emanuelcicero.github.io/Projeto-Disciplina-Web/) 
 
 ## Descrição
 Este projeto foi desenvolvido como parte da disciplina de Desenvolvimento para Web.
