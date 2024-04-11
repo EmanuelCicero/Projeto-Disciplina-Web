@@ -45,3 +45,11 @@ registerButton.addEventListener("click", function(event) {
     window.location.href = "./login.html"
 
 });
+
+function clickMenu(){
+    if (menu.style.display == "block"){
+        menu.style.display = "none"
+    }else{
+        menu.style.display = "block"
+    }
+}

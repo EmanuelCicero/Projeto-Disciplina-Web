@@ -7,6 +7,14 @@
     box-sizing: border-box;   
 }
 
+.material-icons{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
 .header{
     background-color: white;
     position: fixed;
@@ -271,6 +279,75 @@ footer{
 
     .container{
         text-align: center;
+    }
+
+    main{
+        padding-top: 58px;
+    }
+
+    .container_header{
+        justify-content: space-between;
+        padding-left: 20px;
+        height: 50px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .logo{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .pesquisa{
+        width: 10px;
+        padding-right: 40px;
+        transition: 0.3s;
+    }
+
+    .pesquisa:hover{
+        width: 250px;
+        padding-right: 0;
+    }
+
+    .links, .icones{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+        position: fixed;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        left: 0;
+        width: 200px;
+        z-index: 1;
+        transition: whith 0.3s;
+    }
+
+    .menu i{
+        text-align: left;
+        padding: 20px;
+    }
+
+    .menu li{
+        padding-bottom: 10px;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu img{
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+
+    .material-icons{
+        display: block;
     }
 
     .mulher_home{
