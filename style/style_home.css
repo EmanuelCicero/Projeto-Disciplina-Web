@@ -315,6 +315,16 @@ footer{
         gap: 20px;
     }
 
+    .img_kids{
+        background-image: url(../src/categoria_kids_mobile.jpg);
+        margin-top: 10px;
+    }
+
+    .img_mulher{
+        background-image: url(../src/categoria_mulher_mobile.jpg);
+        background-position: center;
+    }
+
     .footer_meio{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
