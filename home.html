@@ -28,14 +28,23 @@
                     </nav>
                 </div>
     
-                <div class="pesquisa" onclick="inputPesquisa()">
+                <div class="pesquisa">
                     <input type="text" placeholder="O que você está procurando?">
                 </div>
     
                 <div class="icones" id="icones">
-                    <img src="src/perfil.svg" alt="">
-                    <img src="src/coracao.svg" alt="">
-                    <img src="src/sacola.svg" alt="">
+                    <div class="conteudo_sair" id="sair">
+                        <a href="login.html">
+                            <button class="btn_sair">Sair</button>
+                        </a>
+                    </div>
+
+                    <a onclick="clickSair()">
+                        <img src="src/perfil.svg" alt="Icone perfil">
+                    </a>
+
+                    <img src="src/coracao.svg" alt="Icone coração">
+                    <img src="src/sacola.svg" alt="Icone sacola">
                 </div>
 
                 <!-- hambúrguer mobile-->
@@ -51,6 +60,8 @@
                             <li><a href="#categoria">Produtos</a></li>
                         </ul>
                     </nav>
+
+                    <a href="login.html">Sair</a>
                     
                 </div>
             </div>

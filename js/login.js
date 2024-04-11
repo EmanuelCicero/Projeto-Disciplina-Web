@@ -21,7 +21,7 @@ loginButton.addEventListener("click", function(event){
     const registerData = JSON.parse(localStorage.getItem("registerData")) || [];
 
     const user = registerData.some(user => user.email === email
-        && user.password === password );
+        && user.password === password);
 
     if (user) {
         window.location.href = "./home.html"
