@@ -1,172 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style-login.css">
     <link rel="shortcut icon" href="/src/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style/style_home.css">
-    <title>Home</title>
+    <title>Registre-se</title>
 </head>
-<body>
-    <header class="header">
-        <div class="container" >
-            <div class="container_header">
-                <i class="material-icons" onclick="clickMenu()">menu</i>
-
-                <div class="logo">
-                    <img src="src/logo_home.svg" alt="logo">
-                </div>
-    
-                <div class="links" id="links">
-                    <nav>
-                        <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="#sobre_nos">Sobre nós</a></li>
-                            <li><a href="#categoria">Produtos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    
-                <div class="pesquisa" onclick="inputPesquisa()">
-                    <input type="text" placeholder="O que você está procurando?">
-                </div>
-    
-                <div class="icones" id="icones">
-                    <img src="src/perfil.svg" alt="">
-                    <img src="src/coracao.svg" alt="">
-                    <img src="src/sacola.svg" alt="">
-                </div>
-
-                <!-- hambúrguer mobile-->
-                <div class="menu" id="menu">
-                    <i class="material-icons" onclick="clickMenu()">arrow_back</i>
-                    <img src="src/perfil.svg" alt="">
-                    <img src="src/coracao.svg" alt="">
-                    <img src="src/sacola.svg" alt="">
-                    <nav>
-                        <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="#sobre_nos">Sobre nós</a></li>
-                            <li><a href="#categoria">Produtos</a></li>
-                        </ul>
-                    </nav>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-
+<body class="screen-register">
     <main>
-        <div class="mulher_home"></div>
-        
-        <section id="sobre_nos" >
-            <div class="container">
-                <div class="sobre_nos" >
-                    <img src="src/homem_sobre.jpg" alt="">
-        
-                    <div class="sobre_conteudo">
-                        <span>Sobre nós</span>
-                        <h1>Feita de forma <br> tradicional</h1>
-                        <p>Bem-vindo à sua boutique de moda europeia. Oferecemos uma cuidadosa seleção de marcas e designers, unindo elegância clássica com inovação contemporânea.
-                             Nossa equipe de consultores de estilo está pronta para ajudar você a encontrar peças que expressam sua individualidade. 
-                             Além disso, nos comprometemos com a sustentabilidade e a responsabilidade social. 
-                             Junte-se a nós e descubra a arte da moda reinventada.</p>
-                    </div>
-                </div>
-            </div>
-        </section>    
-
-        <div class="linha_horizontal"></div>
-
-        <section class="container_categorias" id="categoria">
-            <div class="container">
-                <div class="categorias_conteudo">
-                    <h1>Nossas categorias</h1>
-                    <p>Selecione uma categoria que deseja visualizar</p>
-                </div>
-                <div class="categorias">
-                    <div class="imgs_categorias">
-                        <div class="img_homem tag_mobile">
-                            <span>Homem</span>
-                        </div>
-                        <div class="img_mulher tag_mobile">
-                            <span>Mulher</span>
-                        </div>
-
-                        <div class="imgs_verticais">
-                            <div class="img_acessorios tag_mobile">
-                                <span>Acessórios</span>
-                            </div>
-                            <div class="img_kids tag_mobile">
-                                <span>Kids</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div class="linha_horizontal" id="linha_horizontal_mobile"></div>
-
-    <footer>
         <div class="container">
+            <div class="form-container">
+                <div class="form-login">
+                    <h1>Registre-se</h1>
+                    <form class="form">
+                        <div class="first_last_name">
+                            <label for="nome">Nome</label>
+                            <label for="sobrenome">Sobrenome</label>
 
-            <section >
-                <div class="footer_topo">
-                    <div>
-                        <img src="src/logo_home.svg" alt="logo">
-                    </div>
-                    <div>
-                        <button class="btn_inscreva">Inscreva-se</button>
-                    </div>
+                            <input type="text" placeholder="nome" maxlength="45" id="nome" required>
+                            <input type="text" placeholder="sobrenome" maxlength="45" id="sobrenome">
+                        </div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="test@gmail.com">
+
+                        <label for="senha">Senha</label>
+                        <input type="password" name="password" id="senha" placeholder="************" minlength="8">
+
+                        <button class="form-button" id="botao-cadastro">Cadastre-se</button>
+                    </form>
+                    <span>Você já tem uma conta? <a href="login.html">Entrar</a></span>
                 </div>
-            </section>
-    
-            <section>
-                    <div class="footer_meio">
-                        <div class="produto">
-                            <h1>Produto</h1>
-                            <p>Homem</p>
-                            <p>Mulher</p>
-                            <p>Acessórios</p>
-                            <p>Kids</p>
-                        </div>
-            
-                        <div class="informaçoes">
-                            <h1>Informações</h1>
-                            <p>FAQ</p>
-                            <p>Blog</p>
-                            <p>Suporte</p>
-                        </div>
-            
-                        <div class="empresa">
-                            <h1>Empresa</h1>
-                            <p>Sobre nós</p>
-                            <p>Poduto</p>
-                            <p>Contato</p>
-                        </div>
-            
-                        <div class="social">
-                            <h1>Social</h1>
-                            <p>Facebook</p>
-                            <p>Instagram</p>
-                            <p>Twitter</p>
-                        </div>
-                    </div>
-            </section>
-    
-            <section class="direitos">
-                <div>
-                    <p>Feito por Emanuel Cícero, todos os direitos reservados!</p>
-                </div>
-                <div>
-                    <img src="src/social media.png" alt="Redes Sociais">
-                </div>
-            </section>
+            </div>
         </div>
-    </footer>
+        <div class="form-img">
+            <img src="src/img_form.png" alt="Imagem login">
+        </div>
+        
+        <div class="form-color"> </div>
+
+    </main>
 
     <script src="js/index.js"></script>
 </body>

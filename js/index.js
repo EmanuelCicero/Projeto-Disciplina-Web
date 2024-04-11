@@ -42,7 +42,34 @@ registerButton.addEventListener("click", function(event) {
 
     localStorage.setItem('registerData', JSON.stringify(registerData));
 
+    var nome = document.getElementById("nome").value;
+    var sobrenome = document.getElementById("sobrenome").value;
+    var emailValidate = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+
+    if (nome.trim() === ""){
+        alert("O nome não podem ser vazio.");
+        return false;
+    }
+
+    if (sobrenome.trim() === ""){
+        alert("O sobrenome não pode ser vazio")
+        return false;
+    }
+
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailValidate.trim() === "" || !emailPattern.test(emailValidate)) {
+        alert("Email não pode ser vazio e deve estar em um formato válido.");
+        return false;
+    }
+
+    if (senha.trim() === "" || senha.length < 8) {
+        alert("A senha não pode ser vazia e deve ter pelo menos 8 caracteres.");
+        return false;
+    }
+
     window.location.href = "./login.html"
+    return true; 
 
 });
 

@@ -24,7 +24,7 @@ loginButton.addEventListener("click", function(event){
         && user.password === password );
 
     if (user) {
-        window.location.href = "./index.html"
+        window.location.href = "./home.html"
     }else{
         alert("Email ou Senha incorreto!")
     }
