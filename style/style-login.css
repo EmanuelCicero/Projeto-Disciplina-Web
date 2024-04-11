@@ -70,7 +70,7 @@ label + input {
     height: 500px;
 }
 
-.button-login{
+.form-button{
     display: block;
     margin: 0 auto;
     color: white;
